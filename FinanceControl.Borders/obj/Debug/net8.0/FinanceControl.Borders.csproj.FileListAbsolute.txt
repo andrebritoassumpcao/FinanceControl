@@ -1,0 +1,11 @@
+C:\projects\FinanceControl\FinanceControl.Borders\bin\Debug\net8.0\FinanceControl.Borders.deps.json
+C:\projects\FinanceControl\FinanceControl.Borders\bin\Debug\net8.0\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.Borders\bin\Debug\net8.0\FinanceControl.Borders.pdb
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.AssemblyInfoInputs.cache
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.AssemblyInfo.cs
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.csproj.CoreCompileInputs.cache
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\refint\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.pdb
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\ref\FinanceControl.Borders.dll

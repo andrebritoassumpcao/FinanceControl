@@ -1,0 +1,15 @@
+C:\projects\FinanceControl\FinanceControl.UseCases\bin\Debug\net8.0\FinanceControl.UseCases.deps.json
+C:\projects\FinanceControl\FinanceControl.UseCases\bin\Debug\net8.0\FinanceControl.UseCases.dll
+C:\projects\FinanceControl\FinanceControl.UseCases\bin\Debug\net8.0\FinanceControl.UseCases.pdb
+C:\projects\FinanceControl\FinanceControl.UseCases\bin\Debug\net8.0\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.UseCases\bin\Debug\net8.0\FinanceControl.Borders.pdb
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.csproj.AssemblyReference.cache
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.AssemblyInfoInputs.cache
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.AssemblyInfo.cs
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.csproj.CoreCompileInputs.cache
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceC.8ABB51CE.Up2Date
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.dll
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\refint\FinanceControl.UseCases.dll
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.pdb
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\ref\FinanceControl.UseCases.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FinanceControl.Api.props" />
+</Project>

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FinanceControl.Repositories/1.0.0": {
+        "dependencies": {
+          "FinanceControl.Borders": "1.0.0"
+        },
+        "runtime": {
+          "FinanceControl.Repositories.dll": {}
+        }
+      },
+      "FinanceControl.Borders/1.0.0": {
+        "runtime": {
+          "FinanceControl.Borders.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FinanceControl.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinanceControl.Borders/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

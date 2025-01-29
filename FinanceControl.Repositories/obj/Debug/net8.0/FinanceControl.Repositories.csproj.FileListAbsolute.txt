@@ -1,0 +1,15 @@
+C:\projects\FinanceControl\FinanceControl.Repositories\bin\Debug\net8.0\FinanceControl.Repositories.deps.json
+C:\projects\FinanceControl\FinanceControl.Repositories\bin\Debug\net8.0\FinanceControl.Repositories.dll
+C:\projects\FinanceControl\FinanceControl.Repositories\bin\Debug\net8.0\FinanceControl.Repositories.pdb
+C:\projects\FinanceControl\FinanceControl.Repositories\bin\Debug\net8.0\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.Repositories\bin\Debug\net8.0\FinanceControl.Borders.pdb
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.csproj.AssemblyReference.cache
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.AssemblyInfoInputs.cache
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.AssemblyInfo.cs
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.csproj.CoreCompileInputs.cache
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceC.8E6FBB4D.Up2Date
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.dll
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\refint\FinanceControl.Repositories.dll
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.pdb
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\ref\FinanceControl.Repositories.dll
