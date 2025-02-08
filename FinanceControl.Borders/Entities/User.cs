@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using FinanceControl.Borders.Dtos;
 using FinanceControl.Borders.Dtos.Auth;
+using BCrypt.Net;
+
 
 namespace FinanceControl.Borders.Entities
 {
@@ -19,21 +21,26 @@ namespace FinanceControl.Borders.Entities
             Id = Guid.NewGuid();
             Name = request.Name;
             Email = request.Email;
-            Password = request.Password;
+            Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
             CreatedAt = DateTime.UtcNow;
         }
 
-        public User(UserLoginRequest request)
+        public User(UserLoginRequest request, byte[] secret)
         {
             Email = request.Email;
             Password = request.Password;
         }
 
-        public Guid Id { get; set; }
-        public required string Name { get; set; }
-        public required string Email { get; set; }
-        public required string Password { get; set; }
+        public Guid Id { get; init; }
+        public string? Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; private set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? LastLogin { get; set; }
+
+        public bool ValidatePassword(string password)
+        {
+            return BCrypt.Net.BCrypt.Verify(password, Password);
+        }
     }
 }

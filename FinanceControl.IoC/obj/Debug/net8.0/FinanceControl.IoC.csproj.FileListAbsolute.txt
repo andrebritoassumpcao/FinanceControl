@@ -17,3 +17,4 @@ C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.Io
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\refint\FinanceControl.IoC.dll
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.pdb
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\ref\FinanceControl.IoC.dll
+C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.sourcelink.json

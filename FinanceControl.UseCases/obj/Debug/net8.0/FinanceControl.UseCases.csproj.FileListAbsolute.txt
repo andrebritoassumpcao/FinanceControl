@@ -13,3 +13,4 @@ C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceContr
 C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\refint\FinanceControl.UseCases.dll
 C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.pdb
 C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\ref\FinanceControl.UseCases.dll
+C:\projects\FinanceControl\FinanceControl.UseCases\obj\Debug\net8.0\FinanceControl.UseCases.sourcelink.json
