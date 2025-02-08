@@ -9,3 +9,5 @@ C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceContro
 C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\refint\FinanceControl.Borders.dll
 C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.pdb
 C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\ref\FinanceControl.Borders.dll
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.sourcelink.json
+C:\projects\FinanceControl\FinanceControl.Borders\obj\Debug\net8.0\FinanceControl.Borders.csproj.AssemblyReference.cache

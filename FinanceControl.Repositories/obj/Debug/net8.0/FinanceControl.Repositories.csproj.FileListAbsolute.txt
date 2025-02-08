@@ -13,3 +13,4 @@ C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceC
 C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\refint\FinanceControl.Repositories.dll
 C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.pdb
 C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\ref\FinanceControl.Repositories.dll
+C:\projects\FinanceControl\FinanceControl.Repositories\obj\Debug\net8.0\FinanceControl.Repositories.sourcelink.json
