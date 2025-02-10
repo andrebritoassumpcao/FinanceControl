@@ -17,6 +17,7 @@ using FinanceControl.Borders.Exceptions;
 using FinanceControl.Borders.Interfaces.Repositories;
 using BCrypt.Net;
 using Microsoft.Extensions.Configuration;
+using System.Diagnostics;
 
 
 namespace FinanceControl.UseCases.Auth;
@@ -69,13 +70,22 @@ public class AuthUseCase : IAuthUseCase
 
     private bool ValidateUser(UserLoginRequest request)
     {
-        var user =  _userRepository!.GetUser(request.Email);
-        if (user is null || user.Result!.ValidatePassword(request.Password))
+        var user = _userRepository!.GetUser(request.Email);
+
+        if (user is null)
         {
             throw new InvalidUserException();
         }
+
+        if (!BCrypt.Net.BCrypt.Verify(request.Password, user.Password))
+        {
+            throw new InvalidUserException();
+        }
+
         return true;
     }
+
+
 
     private string GenerateToken(UserLoginRequest request)
     {

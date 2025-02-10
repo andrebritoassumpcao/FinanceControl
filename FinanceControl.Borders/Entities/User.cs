@@ -15,6 +15,7 @@ namespace FinanceControl.Borders.Entities
     [ExcludeFromCodeCoverage]
     public record User
     {
+        public User() { }
 
         public User(UserRegisterRequest request)
         {
@@ -28,7 +29,7 @@ namespace FinanceControl.Borders.Entities
         public User(UserLoginRequest request, byte[] secret)
         {
             Email = request.Email;
-            Password = request.Password;
+            Password = BCrypt.Net.BCrypt.HashPassword(request.Password);
         }
 
         public Guid Id { get; init; }

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FinanceControl.Borders.Dtos.Auth;
-using Microsoft.Data.SqlClient;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using FinanceControl.Borders.Entities;
 using FinanceControl.Borders.Interfaces.Repositories;
+using Microsoft.Data.SqlClient;
 
 namespace FinanceControl.Repositories.UserAuthentication;
 public class UserRepository : IUserRepository
@@ -18,17 +11,31 @@ public class UserRepository : IUserRepository
     {
         _connectionString = connectionString;
     }
-    public async Task<User?> GetUser(string email)
+    public User? GetUser(string email)
     {
         using var connection = new SqlConnection(_connectionString);
-
-        var user = await connection.QueryFirstOrDefaultAsync<User>(
+        var result = connection.QueryFirstOrDefault<User>(
             UserSqlStatement.GetUserByEmail,
             new { Email = email });
 
-        return user;
-
+        return result;
     }
+
+    public void CreateUser(User user)
+    {
+        using var connection = new SqlConnection(_connectionString);
+
+        connection.Execute(UserSqlStatement.CreateUser, new
+        {
+            user.Id,
+            user.Name,
+            user.Email,
+            user.Password,
+            user.CreatedAt
+        });
+    }
+
+
 
 
 }
