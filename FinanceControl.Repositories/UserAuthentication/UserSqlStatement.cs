@@ -12,7 +12,7 @@ public class UserSqlStatement
                             Id,
                             Email,
                             Name,
-                            PasswordHash,
+                            Password,
                             CreatedAt,
                             LastLogin
                         FROM 
@@ -20,5 +20,23 @@ public class UserSqlStatement
                         WHERE
                             Email = @Email;
                     ";
+
+    public static string CreateUser = @"
+                        INSERT INTO dbo.[User] (
+                                Id,
+                                Name,
+                                Email,
+                                Password,
+                                CreatedAt
+                                )
+                        VALUES (
+                                @Id,
+                                @Name,
+                                @Email,
+                                @Password,
+                                @CreatedAt
+                                );
+                    ";
 }
+
 

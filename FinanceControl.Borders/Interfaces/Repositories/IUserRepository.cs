@@ -9,6 +9,7 @@ namespace FinanceControl.Borders.Interfaces.Repositories
 {
     public interface IUserRepository
     {
-        Task<User?> GetUser(string email);
+        User? GetUser(string email);
+        void CreateUser(User user);
     }
 }
