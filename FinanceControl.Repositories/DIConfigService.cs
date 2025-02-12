@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FinanceControl.Borders.Interfaces.Repositories;
+using FinanceControl.Repositories.Accounts;
 using FinanceControl.Repositories.UserAuthentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,8 @@ namespace FinanceControl.Repositories
         {
            services.AddScoped<IUserRepository>(provider =>
                 new UserRepository(configuration.GetDefaultConnectionString()));
+           services.AddScoped<IAccountRepository>(provider =>
+                new AccountRepository(configuration.GetDefaultConnectionString()));
         }
         private static string GetDefaultConnectionString(this IConfiguration configuration)
         => configuration.GetConnectionString("DefaultConnection") ?? throw new Exception("DefaultConnection is not configured");

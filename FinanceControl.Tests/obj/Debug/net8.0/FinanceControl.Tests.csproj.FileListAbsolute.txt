@@ -12,6 +12,13 @@ C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\BCrypt.Net-Next
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Castle.Core.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
@@ -28,6 +35,7 @@ C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Visua
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Moq.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
+C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\xunit.abstractions.dll
 C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\xunit.assert.dll
@@ -114,11 +122,3 @@ C:\projects\FinanceControl\FinanceControl.Tests\obj\Debug\net8.0\refint\FinanceC
 C:\projects\FinanceControl\FinanceControl.Tests\obj\Debug\net8.0\FinanceControl.Tests.pdb
 C:\projects\FinanceControl\FinanceControl.Tests\obj\Debug\net8.0\FinanceControl.Tests.genruntimeconfig.cache
 C:\projects\FinanceControl\FinanceControl.Tests\obj\Debug\net8.0\ref\FinanceControl.Tests.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\projects\FinanceControl\FinanceControl.Tests\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

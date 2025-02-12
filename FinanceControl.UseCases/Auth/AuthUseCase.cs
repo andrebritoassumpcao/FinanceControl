@@ -39,10 +39,9 @@ public class AuthUseCase : IAuthUseCase
         {
             UserLoginResponse result = new UserLoginResponse();
 
-            if (ValidateUser(request))
-            {
-                result.Token = GenerateToken(request);
-            }
+            var userId = ValidateUser(request); 
+
+            result.Token = GenerateToken(request, userId);
 
             return UseCaseResponse<UserLoginResponse>.Success(result);
         }
@@ -68,7 +67,7 @@ public class AuthUseCase : IAuthUseCase
 
     }
 
-    private bool ValidateUser(UserLoginRequest request)
+    private Guid ValidateUser(UserLoginRequest request)
     {
         var user = _userRepository!.GetUser(request.Email);
 
@@ -82,26 +81,34 @@ public class AuthUseCase : IAuthUseCase
             throw new InvalidUserException();
         }
 
-        return true;
+        return user.Id;
     }
 
 
 
-    private string GenerateToken(UserLoginRequest request)
+
+    private string GenerateToken(UserLoginRequest request, Guid userId)
     {
         var tokenHandler = new JwtSecurityTokenHandler();
+        var key = new SymmetricSecurityKey(_secretKey);
+
         var tokenDescriptor = new SecurityTokenDescriptor
         {
-            Subject = new ClaimsIdentity(new Claim[]
+            Subject = new ClaimsIdentity(new[]
             {
-                new Claim(ClaimTypes.Email, request.Email),
-            }),
+            new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+            new Claim(ClaimTypes.Email, request.Email), 
+            new Claim(JwtRegisteredClaimNames.Aud, "FinanceControlUsers"), 
+            new Claim(JwtRegisteredClaimNames.Iss, "FinanceControl") 
+        }),
             Expires = DateTime.UtcNow.AddHours(1),
-            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(_secretKey), SecurityAlgorithms.HmacSha256Signature)
+            Issuer = "FinanceControl",
+            Audience = "FinanceControlUsers",
+            SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature)
         };
+
         var token = tokenHandler.CreateToken(tokenDescriptor);
         return tokenHandler.WriteToken(token);
     }
 }
-
 

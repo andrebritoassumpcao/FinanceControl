@@ -29,4 +29,8 @@
     <ProjectReference Include="..\FinanceControl.Borders\FinanceControl.Borders.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Usecases\BankAccount\" />
+  </ItemGroup>
+
 </Project>

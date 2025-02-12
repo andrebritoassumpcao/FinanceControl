@@ -1,1 +1,8 @@
+bin/
+obj/
 .vs/
+
+# Builds .NET
+Debug/
+Release/
+net8.0/

@@ -7,6 +7,7 @@ using FinanceControl.Borders.Interfaces.UseCases.Auth;
 using FinanceControl.UseCases.Auth;
 using FinanceControl.Borders.Interfaces.Repositories;
 using FinanceControl.Repositories.UserAuthentication;
+using FinanceControl.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]!);
@@ -34,32 +35,11 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-builder.Services.AddScoped<IUserRepository>(provider =>
-{
-    var config = provider.GetRequiredService<IConfiguration>();
-    var connectionString = config.GetConnectionString("DefaultConnection");
-    return new UserRepository(connectionString);
-});
 
-builder.Services.AddScoped<IRegisterUseCase, RegisterUseCase>();
-builder.Services.AddScoped<IAuthUseCase, AuthUseCase>();
+builder.Services.AddApiServices();
 
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Finance Control API",
-        Version = "v1",
-        Description = "API for managing financial accounts and transactions",
-        Contact = new OpenApiContact
-        {
-            Name = "André Luiz Brito Monsores de Assumpção",
-            Email = "andrebrito.monsores@outlook.com"
-        }
-    });
-});
+DependencyInjection.ConfigureServices(builder.Services, builder.Configuration);
+
 
 var app = builder.Build();
 

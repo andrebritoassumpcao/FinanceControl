@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FinanceControl.Borders.Interfaces.Repositories;
 using FinanceControl.Repositories;
 using FinanceControl.Repositories.UserAuthentication;
+using FinanceControl.UseCases;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -16,5 +17,6 @@ public static class DependencyInjection
     public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
     {
         services.AddRepositoriesDataService(configuration);
+        services.AddUseCasesServices();
     }
 }

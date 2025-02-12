@@ -12,9 +12,9 @@ C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.Io
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.AssemblyInfoInputs.cache
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.AssemblyInfo.cs
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.csproj.CoreCompileInputs.cache
+C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.sourcelink.json
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceC.1B24D0F5.Up2Date
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.dll
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\refint\FinanceControl.IoC.dll
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.pdb
 C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\ref\FinanceControl.IoC.dll
-C:\projects\FinanceControl\FinanceControl.IoC\obj\Debug\net8.0\FinanceControl.IoC.sourcelink.json
