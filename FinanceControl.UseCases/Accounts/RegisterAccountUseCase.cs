@@ -58,7 +58,7 @@ namespace FinanceControl.UseCases.Accounts
                 return UseCaseResponse<string>.Success("Account registered successfully.");
                    
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 _logger.LogError(ex, "Error registering account.");
                 return UseCaseResponse<string>.InternalServerError(new List<ErrorMessage>

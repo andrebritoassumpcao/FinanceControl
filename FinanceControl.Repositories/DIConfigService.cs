@@ -16,10 +16,12 @@ namespace FinanceControl.Repositories
     {
         public static void AddRepositoriesDataService(this IServiceCollection services, IConfiguration configuration)
         {
-           services.AddScoped<IUserRepository>(provider =>
-                new UserRepository(configuration.GetDefaultConnectionString()));
-           services.AddScoped<IAccountRepository>(provider =>
-                new AccountRepository(configuration.GetDefaultConnectionString()));
+            services.AddScoped<IUserRepository>(f =>
+               new UserRepository(f.GetRequiredService<ILogger<UserRepository>>(), configuration.GetDefaultConnectionString()));
+            services.AddScoped<IAccountRepository>(f =>
+                new AccountRepository(f.GetRequiredService<ILogger<AccountRepository>>(), configuration.GetDefaultConnectionString()));
+  
+
         }
         private static string GetDefaultConnectionString(this IConfiguration configuration)
         => configuration.GetConnectionString("DefaultConnection") ?? throw new Exception("DefaultConnection is not configured");

@@ -1,6 +1,9 @@
 ﻿using FinanceControl.Borders.Interfaces.Repositories;
+using FinanceControl.Borders.Interfaces.UseCases.Account;
 using FinanceControl.Borders.Interfaces.UseCases.Auth;
+using FinanceControl.Tests.Mock.Repositories;
 using FinanceControl.Tests.Mocks;
+using FinanceControl.UseCases.Accounts;
 using FinanceControl.UseCases.Auth;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,19 +22,24 @@ namespace FinanceControl.Tests.Resolver
             var services = new ServiceCollection();
 
             var config = new ConfigurationBuilder()
-                .AddInMemoryCollection(new Dictionary<string, string>
+                .AddInMemoryCollection(new Dictionary<string, string?>
                 {
-                { "Jwt:Key", "uma-chave-muito-segura-para-testes-1234567890" }
+                    { "Jwt:Key", "uma-chave-muito-segura-para-testes-1234567890" }
                 })
                 .Build();
+
 
             services.AddSingleton<IConfiguration>(config);
 
             var userRepositoryMock = UserRepositoryMock.Create();
+            var accountRepositoryMock = AccountRepositoryMock.Create();
+
             services.AddSingleton<IUserRepository>(userRepositoryMock.Object);
+            services.AddSingleton<IAccountRepository>(accountRepositoryMock.Object);
 
             services.AddScoped<IAuthUseCase, AuthUseCase>();
             services.AddScoped<IRegisterUseCase, RegisterUseCase>();
+            services.AddScoped<IRegisterAccountUseCase, RegisterAccountUseCase>();
 
             services.AddLogging();
 

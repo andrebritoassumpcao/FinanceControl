@@ -10,5 +10,6 @@ namespace FinanceControl.Borders.Interfaces.Repositories
     public interface IAccountRepository
     {
         void CreateAccount(Account account);
+        Task<IEnumerable<Account?>> GetAccounts(Guid userId);
     }
 }

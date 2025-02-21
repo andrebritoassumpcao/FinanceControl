@@ -23,9 +23,17 @@ namespace FinanceControl.Repositories.Accounts
                                 @AccountType,
                                 @UserID
                                 );
-                    ";
-        
-
-
+                             ";
+        public static string GetAccountByUserId = @"
+                          SELECT
+                                Name,
+                                Balance,
+                                AccountType,
+                                UserID
+                           FROM
+                                dbo.[account]
+                           WHERE 
+                                UserID = @UserId;
+                              ";
     }
 }
